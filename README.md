@@ -11,7 +11,7 @@ O projeto é um sistema de **consulta de débitos veiculares** com dois backends
 | Pasta | Stack | Porta |
 |---|---|---|
 | `backend-express/` | Node.js + Express + TypeScript | `3001` |
-| `backend-nest/` | NestJS + TypeScript | `3002` |
+| `backend-nest/` | NestJS + TypeScript | `3001` |
 | `frontend/` | Next.js 14 + TypeScript + Tailwind | `3000` |
 
 **Escolha um dos dois backends para trabalhar** — Express ou NestJS. A escolha é sua, mas **a preferência é NestJS**.
@@ -25,15 +25,15 @@ O frontend é obrigatório independente do backend escolhido.
 # Backend Express (porta 3001)
 cd backend-express && cp .env.example .env && npm install && npm run dev
 
-# Backend NestJS (porta 3002)
+# Backend NestJS (porta 3001)
 cd backend-nest && cp .env.example .env && npm install && npm run start:dev
-# Swagger disponível em http://localhost:3002/docs
+# Swagger disponível em http://localhost:3001/docs
 
 # Frontend
 cd frontend && cp .env.example .env && npm install && npm run dev
 ```
 
-> Se usar NestJS, edite o `frontend/.env` e troque `NEXT_PUBLIC_API_URL` para `http://localhost:3002` e `NEXT_PUBLIC_API_PREFIX` para `/v1`.
+> Se usar NestJS, edite o `frontend/.env` e troque `NEXT_PUBLIC_API_URL` para `http://localhost:3001` e `NEXT_PUBLIC_API_PREFIX` para `/v1`.
 
 **Usuário de teste:**
 ```
